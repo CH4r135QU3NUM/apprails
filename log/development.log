@@ -1566,3 +1566,463 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 26ms (Views: 23.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-26 12:32:53 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 23.8ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-04-26 12:32:54 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (186.2ms)
+Completed 500 Internal Server Error in 195ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd0102951c0>:0x007fd014f6cea8>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path%>">Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265840823440'
+Started GET "/about" for 127.0.0.1 at 2018-04-26 12:32:54 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (214.2ms)
+Completed 500 Internal Server Error in 257ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd0102951c0>:0x007fd0148691b0>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path%>">Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265837146660'
+Started GET "/about" for 127.0.0.1 at 2018-04-26 12:33:57 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (210.6ms)
+Completed 500 Internal Server Error in 221ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd016122990>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path%>">Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265850168140'
+Started GET "/" for 127.0.0.1 at 2018-04-26 12:34:00 +0200
+Processing by StaticPagesController#home as HTML
+Started GET "/" for 127.0.0.1 at 2018-04-26 12:34:00 +0200
+  Rendering static_pages/home.html.erb within layouts/application
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 36ms (Views: 32.2ms)
+
+
+Completed 200 OK in 53ms (Views: 47.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-04-26 12:34:04 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (179.8ms)
+Completed 500 Internal Server Error in 189ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd0171b6b08>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path%>">Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265858800200'
+Started GET "/aboutme" for 127.0.0.1 at 2018-04-26 12:34:04 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/aboutme"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/about" for 127.0.0.1 at 2018-04-26 12:34:06 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+Started GET "/about" for 127.0.0.1 at 2018-04-26 12:34:06 +0200
+  Rendered static_pages/about.html.erb within layouts/application (151.6ms)
+Processing by StaticPagesController#about as HTML
+Completed 500 Internal Server Error in 161ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd0102e8168>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path%>">Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265800705740'
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (185.1ms)
+Completed 500 Internal Server Error in 248ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd0137394a8>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path%>">Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265828136460'
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:34:07 +0200
+Processing by StaticPagesController#about as HTML
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:34:07 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (167.6ms)
+  Rendering static_pages/about.html.erb within layouts/application
+Completed 500 Internal Server Error in 423ms
+
+
+  Rendered static_pages/about.html.erb within layouts/application (202.1ms)
+  
+Completed 500 Internal Server Error in 455ms
+
+
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd01639a790>):
+  
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path%>">Me, myself and I </p>
+    5: <p>Made by Charles</p>
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd017087750>):
+  
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path%>">Me, myself and I </p>
+    5: <p>Made by Charles</p>
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265851402380'
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265858318380'
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:37:42 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (174.0ms)
+Completed 500 Internal Server Error in 183ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd014d2be00>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p> href="<%= me.path%>" Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265839656300'
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:37:44 +0200
+Processing by StaticPagesController#about as HTML
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:37:44 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (276.6ms)
+Completed 500 Internal Server Error in 294ms
+
+
+  
+  Rendered static_pages/about.html.erb within layouts/application (365.2ms)
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd014be0398>):
+Completed 500 Internal Server Error in 385ms
+
+
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p> href="<%= me.path%>" Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd014c18ef0>):
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265839017920'
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p> href="<%= me.path%>" Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265839017920'
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:38:38 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (181.2ms)
+Completed 500 Internal Server Error in 191ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd014a12520>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path %>"> Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265838018140'
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:38:40 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:38:40 +0200
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (190.3ms)
+Completed 500 Internal Server Error in 203ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd01365bec8>):
+  Rendering static_pages/about.html.erb within layouts/application
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path %>"> Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+  Rendered static_pages/about.html.erb within layouts/application (182.2ms)
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265827691420'
+Completed 500 Internal Server Error in 193ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd017065b50>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <p href="<%= me.path %>"> Me, myself and I </p>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265858110060'
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:06 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (238.6ms)
+Completed 500 Internal Server Error in 249ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `me' for #<#<Class:0x007fd016133088>:0x007fd0135a0cb8>):
+    1: <h1>About</h1>
+    2: 
+    3: 
+    4: <a href="<%= me.path %>"> Me, myself and I </a>
+    5: <p>Made by Charles</p>
+  
+app/views/static_pages/about.html.erb:4:in `_app_views_static_pages_about_html_erb__3481367345123305593_70265827299940'
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:25 +0200
+Processing by StaticPagesController#about as HTML
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:25 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.6ms)
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 53ms (Views: 48.0ms)
+
+
+Completed 200 OK in 46ms (Views: 40.2ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:28 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.0ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:30 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 23.1ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:30 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 22.6ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:31 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 25.1ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:32 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 22.8ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:32 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 22.9ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:33 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 23.9ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:35 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 23.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-04-26 12:39:46 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 39.4ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:39:50 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 21.2ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:40:17 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 29ms (Views: 26.9ms)
+
+
+Started GET "/about/group" for 127.0.0.1 at 2018-04-26 12:40:19 +0200
+Processing by StaticPagesController#aboutgroup as HTML
+  Rendering static_pages/aboutgroup.html.erb within layouts/application
+  Rendered static_pages/aboutgroup.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 17.9ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:40:21 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 22.2ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:40:23 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 24.4ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:40:23 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 21.6ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:40:39 +0200
+Processing by StaticPagesController#aboutme as HTML
+  Rendering static_pages/aboutme.html.erb within layouts/application
+  Rendered static_pages/aboutme.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 18.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-04-26 12:40:42 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 22.4ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:40:43 +0200
+Processing by StaticPagesController#aboutme as HTML
+  Rendering static_pages/aboutme.html.erb within layouts/application
+  Rendered static_pages/aboutme.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.5ms)
+
+
+Started GET "/about/group" for 127.0.0.1 at 2018-04-26 12:40:45 +0200
+Processing by StaticPagesController#aboutgroup as HTML
+  Rendering static_pages/aboutgroup.html.erb within layouts/application
+  Rendered static_pages/aboutgroup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.8ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-04-26 12:41:04 +0200
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 20.3ms)
+
+
+Started GET "/about/me" for 127.0.0.1 at 2018-04-26 12:41:05 +0200
+Processing by StaticPagesController#aboutme as HTML
+  Rendering static_pages/aboutme.html.erb within layouts/application
+  Rendered static_pages/aboutme.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 26.7ms)
+
+
+Started GET "/about/group" for 127.0.0.1 at 2018-04-26 12:41:08 +0200
+Processing by StaticPagesController#aboutgroup as HTML
+  Rendering static_pages/aboutgroup.html.erb within layouts/application
+  Rendered static_pages/aboutgroup.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 17.7ms)
+
+

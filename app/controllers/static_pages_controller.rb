@@ -8,4 +8,10 @@ class StaticPagesController < ApplicationController
   def about
   end
 
+  def about_me
+  end
+
+  def about_group
+  end
+
 end
