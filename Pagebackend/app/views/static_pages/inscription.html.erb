@@ -1,8 +1,11 @@
-<p>Yeahhhh inscris toi mamène</p>
+<p>Bienvenue, inscris toi mamène</p>
 
 
 <form action="/" method="POST">
-  <input type="text" name="first_name">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-  <input type="submit" value="Envoyer le formulaire">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	Ton prénom :<br>
+  	<input type="text" name="username"> <br><br>
+  	Ta biographie passionnante :<br>
+  	<textarea name="bio" rows="10" cols="20"> The cat was playing in the garden. </textarea> <br><br>
+  	<input type="submit" value="Envoyer le formulaire">
 </form>
