@@ -7,7 +7,11 @@ class UsersController < ApplicationController
 	 	user.username = params[:username]
 	  	user.bio = params[:bio]
 	 	user.save
-	 	redirect_to "http://localhost:3000"
+	 	redirect_to userpage_path(@user)
 	end
+
+	def show
+    @user = User.find_by_name(params[:username])
+ 	end
 
 end

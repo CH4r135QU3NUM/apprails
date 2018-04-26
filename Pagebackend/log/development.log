@@ -2794,3 +2794,485 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:24:14 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:24:15 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 26.6ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:24:16 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:24:24 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"kNSL5S5anPuozmkC1F1Z5Js/d6BqGF/EixW0ciyBo0FbeIGs2hZNJIhX982dQEhSTo4SD0W2n6t8WhREoTwPKg==", "username"=>"Claire", "bio"=>"Super wahou trop top"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Claire"], ["bio", "Super wahou trop top"], ["created_at", "2018-04-26 14:24:24.899495"], ["updated_at", "2018-04-26 14:24:24.899495"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000wahou_path
+Completed 302 Found in 12ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:24:54 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 23.1ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:25:01 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"QkfH5AC/g4z1/NR7VSWxXT5Edqv/MVZFJiOE2IjehVSJ682t9PNSU9VlSrQcOKDr6/UTBNCflirRbCTuBWMpPw==", "username"=>"Claire", "bio"=>"hihihi"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Claire"], ["bio", "hihihi"], ["created_at", "2018-04-26 14:25:01.072999"], ["updated_at", "2018-04-26 14:25:01.072999"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000wahouh_path
+Completed 302 Found in 12ms (ActiveRecord: 3.8ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:25:37 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"kNSL5S5anPuozmkC1F1Z5Js/d6BqGF/EixW0ciyBo0FbeIGs2hZNJIhX982dQEhSTo4SD0W2n6t8WhREoTwPKg==", "username"=>"Juliette", "bio"=>"Maillard"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Juliette"], ["bio", "Maillard"], ["created_at", "2018-04-26 14:25:37.182929"], ["updated_at", "2018-04-26 14:25:37.182929"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000wahouh_path
+Completed 302 Found in 14ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:28:55 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 18.5ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:28:56 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 26.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:28:58 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 33ms (Views: 27.9ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-04-26 16:28:59 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 22.2ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:29:02 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"ApECBPSHPhrkqFN8D8YZUtFjnnbJcE5mgHXWjtA5l2fJPQhNAMvvxcQxzbNG2wjkBNL72ebejgl3Ona4XYQ7DA==", "username"=>"La", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "La"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 14:29:02.716344"], ["updated_at", "2018-04-26 14:29:02.716344"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000
+Completed 302 Found in 16ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:29:02 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:30:59 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 19.3ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:31:02 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"YCzflJUw5jNgdm6v+mAxsaqykyTyNkqQR86ZZUX7TcGrgNXdYXw37EDv8GCzfSAHfwP2i92Yiv+wgTlTyEbhqg==", "username"=>"Michel", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (3.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Michel"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 14:31:02.901829"], ["updated_at", "2018-04-26 14:31:02.901829"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000redirection
+Completed 302 Found in 16ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:31:31 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 26.2ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:31:35 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"zGpor2WkUe99jfwG8NK14LrGVjTuav35pPFsWCdhRlMHxmLmkeiAMF0UYsm5z6RWb3czm8HEPZZTvsxuqtzqOA==", "username"=>"Michelle", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Michelle"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 14:31:35.279258"], ["updated_at", "2018-04-26 14:31:35.279258"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000redirection_path
+Completed 302 Found in 15ms (ActiveRecord: 4.1ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:32:41 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"YCzflJUw5jNgdm6v+mAxsaqykyTyNkqQR86ZZUX7TcGrgNXdYXw37EDv8GCzfSAHfwP2i92Yiv+wgTlTyEbhqg==", "username"=>"Michaille", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Michaille"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 14:32:41.267434"], ["updated_at", "2018-04-26 14:32:41.267434"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000
+Completed 302 Found in 13ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:32:41 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:36:20 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 19.1ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:36:26 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"+d1YVnTo+xOUMS0KpV5yoDRIEhJnSiTPBBv78L4nL30ycVIfgKQqzLSos8XsQ2MW4fl3vUjk5KDzVFvGM5qDFg==", "username"=>"Mamène", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Mamène"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 14:36:26.450408"], ["updated_at", "2018-04-26 14:36:26.450408"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000
+Completed 302 Found in 13ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:36:26 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:38:05 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:38:06 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 27.7ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:38:06 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 23.9ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:38:11 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"rwpRRZUY9/ocnMzTmefvJGvchSqA4pf2476xM8BQCe9kplsMYVQmJTwFUhzQ+v6Svm3gha9MV5kU8REFTe2lhA==", "username"=>"Yaoo", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Yaoo"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 14:38:11.722211"], ["updated_at", "2018-04-26 14:38:11.722211"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000redirection_path
+Completed 302 Found in 14ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-04-26 16:39:09 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 17.7ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:39:13 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:39:13 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 21.8ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:39:14 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 29.1ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:39:19 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"4WDprRL4sonk0Vft/RCxV0NR23Jb8lz2VqzWaqp28HwqzOPk5rRjVsRIySK0DaDhluC+3XRcnJmh43ZcJ8tcFw==", "username"=>"Wesh", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Wesh"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 14:39:19.241482"], ["updated_at", "2018-04-26 14:39:19.241482"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000redirection_path
+Completed 302 Found in 15ms (ActiveRecord: 3.6ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:40:26 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"2UyGDy0xH/PRDGOp3M+CqBvvMIMlkZc2ICyk0nQrMxsS4IxG2X3OLPGV/WaV0pMezl5VLAo/V1nXYwTk+ZafcA==", "username"=>"Nacre", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Nacre"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 14:40:26.525719"], ["updated_at", "2018-04-26 14:40:26.525719"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000redirection_path
+Completed 302 Found in 4ms (ActiveRecord: 1.9ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 16:42:17 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"4WDprRL4sonk0Vft/RCxV0NR23Jb8lz2VqzWaqp28HwqzOPk5rRjVsRIySK0DaDhluC+3XRcnJmh43ZcJ8tcFw==", "username"=>"Kevin", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Kevin"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 14:42:17.284660"], ["updated_at", "2018-04-26 14:42:17.284660"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000redirection_path(:id)
+Completed 302 Found in 15ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2018-04-26 16:47:43 +0200
+Processing by UsersController#new as HTML
+Started GET "/" for 127.0.0.1 at 2018-04-26 16:47:43 +0200
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 16:47:43 +0200
+  Rendering users/new.html.erb within layouts/application
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 37ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:02:48 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 28.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 17:02:49 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 21.9ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:02:50 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 30.5ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:02:55 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"6BawhbZ93KlSWW4Eo0MTvhIuCHKzSUwwi5TBe6Q38XojurrMQjENdnLA8MvqXgIIx59t3ZznjF9822FNKYpdEQ==", "username"=>"Dylan", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Dylan"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:02:55.397281"], ["updated_at", "2018-04-26 15:02:55.397281"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :user=>nil}, missing required keys: [:user]):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/" for 127.0.0.1 at 2018-04-26 17:03:41 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 21.8ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:03:41 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 30.8ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:03:46 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"gZbDMk+0IDFKr7y9e9JJQxeB200kOq3d6zliDQmzXhtKOsl7u/jx7mo2InIyz1j1wjC+4guUbbIcdsI7hA7ycA==", "username"=>"Kaivin", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Kaivin"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:03:46.353567"], ["updated_at", "2018-04-26 15:03:46.353567"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000user_path(@user)
+Completed 302 Found in 15ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 17:03:51 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 17:03:51 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:04:47 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 18.1ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:04:51 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"cGUIybHPuU7Lm07mDIGNic4VFh/X1WER8DArO6WsmKW7yQKARYNokesC0ClFnJw/G6RzsPh7oX4Hf4sNKBE0zg==", "username"=>"Mimi", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Mimi"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:04:51.171385"], ["updated_at", "2018-04-26 15:04:51.171385"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000user_path
+Completed 302 Found in 18ms (ActiveRecord: 3.6ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:05:32 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"i0sb1XhRk4WhtaKh7Mp8iz27jOen3hKJoaV+FOP3ksVA5xGcjB1CWoEsPG6l12096ArpSIhw0uZW6t4ibko+rg==", "username"=>"Qalir", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Qalir"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:05:32.185274"], ["updated_at", "2018-04-26 15:05:32.185274"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000user_path(@username)
+Completed 302 Found in 13ms (ActiveRecord: 3.8ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:05:50 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"cGUIybHPuU7Lm07mDIGNic4VFh/X1WER8DArO6WsmKW7yQKARYNokesC0ClFnJw/G6RzsPh7oX4Hf4sNKBE0zg==", "username"=>"Laaaaaa", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Laaaaaa"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:05:50.282527"], ["updated_at", "2018-04-26 15:05:50.282527"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000user_path@username
+Completed 302 Found in 14ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:06:37 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 18.5ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:06:41 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"VnGg35xdLM8dDHFfsdJlyG+AW9lcYmzTJ/zCfEPpiF+d3aqWaBH9ED2V75D4z3R+ujE+dnPMrLzQs2JKzlQkNA==", "username"=>"Gkrij", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Gkrij"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:06:41.158110"], ["updated_at", "2018-04-26 15:06:41.158110"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.5ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :user=>nil}, missing required keys: [:user]):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:09:11 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"i0sb1XhRk4WhtaKh7Mp8iz27jOen3hKJoaV+FOP3ksVA5xGcjB1CWoEsPG6l12096ArpSIhw0uZW6t4ibko+rg==", "username"=>"Braaaa", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Braaaa"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:09:11.030416"], ["updated_at", "2018-04-26 15:09:11.030416"]]
+  [1m[35m (2.8ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :user=>nil}, missing required keys: [:user]):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/" for 127.0.0.1 at 2018-04-26 17:11:00 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 25.1ms)
+
+
+Started GET "/nacre" for 127.0.0.1 at 2018-04-26 17:11:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/nacre"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.1) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.1) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:16:16 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 26.4ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:16:27 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 22.1ms)
+
+
