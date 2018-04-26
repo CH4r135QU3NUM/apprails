@@ -5,13 +5,7 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
-  def about
-  end
-
-  def about_me
-  end
-
-  def about_group
+  def inscription
   end
 
 end
