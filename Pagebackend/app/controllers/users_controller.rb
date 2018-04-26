@@ -1,2 +1,6 @@
-def new
+class UsersController < ApplicationController
+	
+	def new
+	end
+
 end
