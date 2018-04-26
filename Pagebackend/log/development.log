@@ -3276,3 +3276,342 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 25ms (Views: 22.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-04-26 17:29:55 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 31.6ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:29:55 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 35.4ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:29:58 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"tlZWpUAZIsHUkzeSmNU5vAn1UXpQxrlz87T3TV1YlAB9+lzstFXzHvQKqV3RyCgK3EQ01X9oeRwE+1d70OU4aw==", "username"=>"Labas", "bio"=>" The cat was playing in the garden. "}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.8ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/users_controller.rb:9:in `create'
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:30:16 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"p+QdepfxppT0zkwL5Fm5NJijVJcPYT8v3hHK2m+jYR9sSBczY713S9RX0sStRKiCTRIxOCDP/0ApXmrs4h7NdA==", "username"=>"labasla", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "labasla"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:30:16.337524"], ["updated_at", "2018-04-26 15:30:16.337524"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 29ms (ActiveRecord: 8.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=):
+  
+app/controllers/users_controller.rb:15:in `show'
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:31:00 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"tlZWpUAZIsHUkzeSmNU5vAn1UXpQxrlz87T3TV1YlAB9+lzstFXzHvQKqV3RyCgK3EQ01X9oeRwE+1d70OU4aw==", "username"=>"Mouahah", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Mouahah"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:31:00.202562"], ["updated_at", "2018-04-26 15:31:00.202562"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:31:47 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"p+QdepfxppT0zkwL5Fm5NJijVJcPYT8v3hHK2m+jYR9sSBczY713S9RX0sStRKiCTRIxOCDP/0ApXmrs4h7NdA==", "username"=>"labasla", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "labasla"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:31:47.623636"], ["updated_at", "2018-04-26 15:31:47.623636"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 4.5ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:38:17 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"tlZWpUAZIsHUkzeSmNU5vAn1UXpQxrlz87T3TV1YlAB9+lzstFXzHvQKqV3RyCgK3EQ01X9oeRwE+1d70OU4aw==", "username"=>"Bijour", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Bijour"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:38:17.229020"], ["updated_at", "2018-04-26 15:38:17.229020"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:39:04 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"p+QdepfxppT0zkwL5Fm5NJijVJcPYT8v3hHK2m+jYR9sSBczY713S9RX0sStRKiCTRIxOCDP/0ApXmrs4h7NdA==", "username"=>"Fouar", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Fouar"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:39:04.215748"], ["updated_at", "2018-04-26 15:39:04.215748"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:44:19 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 26.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 17:44:20 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 74ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:44:20 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:44:25 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"bC+y820uQZZFYOaLUoi4oYn0MGD8KkmW4gIzxfm4sH2ng7i6mWKQSWX5eEQblakXXEVVz9OEifkVTZPzdAUcFg==", "username"=>"Laaaaaba", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Laaaaaba"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:44:25.555042"], ["updated_at", "2018-04-26 15:44:25.555042"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 4.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:12:in `create'
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:46:14 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 25.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-26 17:46:15 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 65ms (Views: 58.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:46:16 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:46:19 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"BtcJf1TCq3v5EnRUeafGtbKVCujaZ7Ka0KOqeBq6DdfNewM2oI56pNmL6pswutcDZyRvR/XJcvUn7ApOlwehvA==", "username"=>"Bijoureeee", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Bijoureeee"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:46:19.760221"], ["updated_at", "2018-04-26 15:46:19.760221"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/users_controller.rb:12:in `create'
+Started GET "/new/" for 127.0.0.1 at 2018-04-26 17:48:30 +0200
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 27.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:48:37 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"aTihaRZJxYKMyivhWpS3ErtyL4rd9+ENl/WH7nIQQniilKsg4gUUXaxTtS4TiaakbsNKJfJZIWJguifY/63uEw==", "username"=>"Louison", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Louison"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:48:37.316792"], ["updated_at", "2018-04-26 15:48:37.316792"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/30
+Completed 302 Found in 5ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/users/30" for 127.0.0.1 at 2018-04-26 17:48:37 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (149.3ms)
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `id_path' for #<#<Class:0x007fc06764e1a8>:0x007fc06d9396a0>
+Did you mean?  video_path):
+    1:  <h1>Bienvenue <%= link_to 'User', id_path(@id) %> </h1>
+  
+app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb___3805990847943727957_70232224419900'
+Started POST "/new" for 127.0.0.1 at 2018-04-26 17:49:36 +0200
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"u51UgGQmPCyFdsiVzi53zvbZtuv7DzAzrckCOejpWztwMV7JkGrt86XvVlqHM2Z4I2jTRNSh8FxahqIPZVT3UA==", "username"=>"Laaaaaa", "bio"=>" The cat was playing in the garden. "}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "Laaaaaa"], ["bio", " The cat was playing in the garden. "], ["created_at", "2018-04-26 15:49:36.520223"], ["updated_at", "2018-04-26 15:49:36.520223"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/users/31
+Completed 302 Found in 5ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:49:36 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:49:41 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:49:43 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 19.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:49:43 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 44.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:49:58 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 18.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:50:00 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 23.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:50:01 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 20.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:50:13 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:50:13 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 35ms (Views: 30.3ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 52ms (Views: 47.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:50:29 +0200
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:50:29 +0200
+Processing by UsersController#show as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (405.6ms)
+  Rendered users/show.html.erb within layouts/application (326.1ms)
+Completed 500 Internal Server Error in 427ms (ActiveRecord: 0.2ms)
+
+
+Completed 500 Internal Server Error in 427ms (ActiveRecord: 0.1ms)
+
+
+  
+  
+ActionView::Template::Error (undefined local variable or method `username' for #<#<Class:0x007fc06764e1a8>:0x007fc06e8595b8>
+Did you mean?  user_path):
+ActionView::Template::Error (undefined local variable or method `username' for #<#<Class:0x007fc06764e1a8>:0x007fc06e80bc78>
+Did you mean?  user_path):
+    1:  <h1>Bienvenue <%= username %> </h1>
+    1:  <h1>Bienvenue <%= username %> </h1>
+  
+  
+app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb___3805990847943727957_70232232350220'
+app/views/users/show.html.erb:1:in `_app_views_users_show_html_erb___3805990847943727957_70232232350220'
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:50:36 +0200
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:50:36 +0200
+Processing by UsersController#show as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Started GET "/users/31" for 127.0.0.1 at 2018-04-26 17:50:36 +0200
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Parameters: {"id"=>"31"}
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 75ms (Views: 68.4ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 90ms (Views: 76.0ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 76ms (Views: 63.4ms | ActiveRecord: 0.4ms)
+
+
