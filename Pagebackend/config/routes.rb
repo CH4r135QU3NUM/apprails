@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'about/me', to: 'static_pages#aboutme', as: 'me'
   get 'about', to: 'static_pages#about'
   get 'contact', to: 'static_pages#contact'
-  get '/', to: 'static_pages#home' #oupostàlaplacedehome
-
+  get '/', to: 'static_pages#home' 
+  get 'inscription', to: 'static_pages#inscription'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
