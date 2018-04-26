@@ -1,9 +1,13 @@
 class UsersController < ApplicationController
-	
-	def new_post
-		puts "Hello depuis le serveur"
-		puts params
-		puts "c'est fini"
+	def new
+	end
+
+	def create
+		user = User.new
+	 	user.username = params[:username]
+	  	user.bio = params[:bio]
+	 	user.save
+	 	redirect_to "http://localhost:3000"
 	end
 
 end
