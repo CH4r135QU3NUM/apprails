@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 	
-	def new
+	def new_post
 	end
 
 end
